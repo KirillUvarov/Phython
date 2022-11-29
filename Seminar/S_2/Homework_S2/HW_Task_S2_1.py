@@ -4,22 +4,27 @@
 # 67.82 -> 23
 # (-0.56) -> 11
 
-number = list (input('Введите вещественное число: '))
-# for (number%10 = 0):
-#     a = number%10
-print(number%10)
-print(number//10)
-
-# print(number[2:])
-# print(word[:2])
-# print(word[1:3])
-# # thon
-# # py
-# # yt
+def InputNumbers(inputText):
+    is_OK = False
+    while not is_OK:
+        try:
+            number = float(input(f"{inputText}"))
+            is_OK = True
+        except ValueError:
+            print("Это не число!")
+    return number
 
 
-# sum = number%10
+def sumNums(num):
+    sum = 0
+    for i in str(num):
+        if i != ".":
+            sum += int(i)
+    return sum
 
-# for i in range(0, number):
-#     i+=1
-#     print(number)
+
+num = InputNumbers("Введите число: ")
+
+print(f"Сумма цифр = {sumNums(num)}")
+
+
