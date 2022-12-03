@@ -1,47 +1,47 @@
 # lambda
 
-# def sum(x):
-#     return x+10
+def sum(x):
+    return x+10
 
 
 
-# def mult(x):
-#     return x**2
+def mult(x):
+    return x**2
 
-# def sum1(x):
-#     return x+22
+def sum1(x):
+    return x+22
 
-# def mult2(x):
-#     return x**3
+def mult2(x):
+    return x**3
 
-# def sum3(x):
-#     return x+242
+def sum3(x):
+    return x+242
 
-# def mult4(x):
-#     return x**5
+def mult4(x):
+    return x**5
 
-# print(sum3(mult2(2)))
-# print(sum1(mult2(2)))
-# print(sum(mult(2)))
+print(sum3(mult2(2)))
+print(sum1(mult2(2)))
+print(sum(mult(2)))
 
-# def calc(x):
-#     return x + 10
-# print(calc(10))
+def calc(x):
+    return x + 10
+print(calc(10))
 
-# def calc2(x):
-#     return x * 10
-# print(calc(10))
+def calc2(x):
+    return x * 10
+print(calc(10))
 
-# def math(op, x):
-#     print(op, x)
+def math(op, x):
+    print(op, x)
 
-# f = lambda x, y: x+y
+f = lambda x, y: x+y
 
-# # math(calc, 10)
-# math(calc2, 10)
+# math(calc, 10)
+math(calc2, 10)
 
-# def calc(op, a, b):
-#     print(op(a, b))
+def calc(op, a, b):
+    print(op(a, b))
 
 
 # sum = lambda x: x+10 # Делает тоже самое, что и функция sum
@@ -54,4 +54,4 @@
 # mult4 = lambda x: x**5
 # sum3(mult2(2))
 
-calc(lambda x, y: x+y, 4, 5)
+# calc(lambda x, y: x+y, 4, 5)
