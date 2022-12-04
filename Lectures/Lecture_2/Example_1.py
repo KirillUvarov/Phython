@@ -9,7 +9,7 @@
 # data.writelines(colors) # разделителей не будет
 # data.close() #закрыли подключение к файлу
 
-with open('file.txt', 'w') as data:
+with open('file_3.txt', 'w') as data:
     data.write('line 444 \n')
     data.write('line 333 \n')
 

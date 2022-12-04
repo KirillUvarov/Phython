@@ -10,8 +10,9 @@
 # list = [(i, i) for i in range (1, 21) if i % 2 == 0] # Делает то же самое
 # print(list)
 
-def f(x):
-    return x**3
+# def f(x):
+#     return x**3
 
-list = [(i, f(i)) for i in range (1, 21) if i % 2 == 0] # Задаём катежи, с указанием чисел и их кубов
-print(list)
+# list = [(i, f(i)) for i in range (1, 21) if i % 2 == 0] # Задаём катежи, с указанием чисел и их кубов
+# print(list)
+
