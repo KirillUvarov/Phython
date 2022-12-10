@@ -39,3 +39,39 @@
 # exit()
 
 #.upper
+
+class Student:
+
+    def __init__(self, full_name="", group_number="", progress=[]):
+        self.full_name = full_name
+        self.group_number = group_number
+        self.progress = progress
+
+    def __repr__(self):
+        return repr(("Студент: " + self.full_name + "  Группа: " + self.group_number))
+
+    def addStu(self):
+        print("Введите Фио: ")
+        self.full_name = input()
+        print("Введите номер группы: ")
+        self.group_number = input()
+        print("Введите последние 5 отценок : ")
+        self.progress = []
+        for i in range(5):
+            score = int(input())
+            self.progress.append(score)
+    def getMarks(self): # возвращает список оценок
+        return self.progress
+        
+
+
+st_size = 2
+sz_ocenki = 5
+students = [] # список студентов
+for i in range(st_size):
+    st = Student()
+    st.addStu()
+    students.append(st); 
+    
+for student in students:
+    print(student.getMarks())
